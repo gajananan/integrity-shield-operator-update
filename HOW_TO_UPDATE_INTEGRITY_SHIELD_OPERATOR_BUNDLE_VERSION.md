@@ -23,7 +23,7 @@
       ```
       Edit the following properties as shown below.
       
-      ![Shield Config](./shield-config.PNG)
+      ![Shield Config](./shield-config.png)
       
       
       Before

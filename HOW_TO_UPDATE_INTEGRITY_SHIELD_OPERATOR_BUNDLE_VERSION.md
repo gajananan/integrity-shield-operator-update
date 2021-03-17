@@ -33,7 +33,7 @@
       PREV_VERSION=0.1.4
       ```
       
-      After     
+      After    
       ```
       ISHIELD_VERSION=0.1.6
       VERSION=0.1.6
@@ -45,8 +45,8 @@
        
       ```
       make delete-private-registry
-      make delete-kind-cluster
-      make create-kind-cluster
+      make delete-kind-cluster
+      make create-kind-cluster
      
       ```
         
@@ -61,6 +61,7 @@
       ```
       export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
       ```
+      
    9. Run e2e test using OLM bundle and make sure all e2e tests are passed
       
       ```
@@ -72,12 +73,12 @@
       make update-version
       ```
        
-   12. Check git status and git diff for all changed files
+   11. Check git status and git diff for all changed files
 
-   13. Perform manual edit on `<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/bundle/manifests/integrity-shield-operator.clusterserviceversion.yaml`
+   12. Perform manual edit on `<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/bundle/manifests/integrity-shield-operator.clusterserviceversion.yaml`
 
        - Add line `replaces: integrity-shield-operator.vx.x.x`   (x matches with previous PREV_VERSION in `ishield-build.conf`)
        - Change from localhost:5000 to quay.io/open-cluster-management in all places.
        - Save the file
        
-   14. Commit changes to files and create PR
+   13. Commit changes to files and create PR

@@ -14,7 +14,7 @@
       export ISHIELD_ENV=local
       export ISHIELD_REPO_ROOT=<Home Dir>/github.com/IBM/integrity-enforcer
       export TEST_LOCAL=true
-       export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
+      export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
       ```
    3. Change version in build configuration
       
@@ -27,22 +27,26 @@
       
       
       Before
-        ISHIELD_VERSION=0.1.5
-        VERSION=0.1.5
-        PREV_VERSION=0.1.4
-        
-       After     
-        ISHIELD_VERSION=0.1.6
-        VERSION=0.1.6
-        PREV_VERSION=0.1.5
+      ```
+      ISHIELD_VERSION=0.1.5
+      VERSION=0.1.5
+      PREV_VERSION=0.1.4
+      ```
       
-      
+      After     
+      ```
+      ISHIELD_VERSION=0.1.6
+      VERSION=0.1.6
+      PREV_VERSION=0.1.5
+      ```
+     
+     
    5. Reset kind cluster 
        
       ```
-        make delete-private-registry
-        make delete-kind-cluster
-        make create-kind-cluster
+      make delete-private-registry
+      make delete-kind-cluster
+      make create-kind-cluster
      
       ```
         
@@ -65,7 +69,7 @@
    10. Update version in required files
       
       ```
-       make update-version
+      make update-version
       ```
        
    12. Check git status and git diff for all changed files

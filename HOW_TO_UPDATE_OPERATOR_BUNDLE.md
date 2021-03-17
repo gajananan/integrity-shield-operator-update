@@ -1,8 +1,8 @@
 # Update Integrity Shield operator  submitted at operatorhub 
 
 ## Prerequisite:
-   1. Complete the steps to update version of Integrity Shield and test the operator locally with OLM on a Kind clusters described [here]()
-   2. Complete the steps to test Integrity Shield protection using ACM Polices with images from Quay repository as described [here]()
+   1. Complete the steps to update version of Integrity Shield and test the operator locally with OLM on a Kind clusters described [here](./HOW_TO_UPDATE_INTEGRITY_SHIELD_OPERATOR_BUNDLE_VERSION.md)
+   2. Complete the steps to test Integrity Shield protection using ACM Polices with images from Quay repository as described [here](./HOW_TO_TEST_INTEGRITY_SHIELD_WITH_IMAGES_FROM_OCM_QUAY_REPOSITORY.md)
    
 ## Steps
 

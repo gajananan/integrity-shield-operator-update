@@ -63,10 +63,14 @@
       ```
    8. Run e2e test using OLM bundle and make sure all e2e tests are passed
    
+      ```
+      make test-e2e-bundle
+      ```
+      
    9. Update version in required files
       
       ```
-      make test-e2e-bundle
+      make update-version
       ```
       
    10. Check git status and git diff for all changed files

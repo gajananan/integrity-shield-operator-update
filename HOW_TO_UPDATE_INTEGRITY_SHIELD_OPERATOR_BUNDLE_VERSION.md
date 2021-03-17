@@ -9,12 +9,14 @@
       cd <Home Dir>/github.com/IBM/integrity-enforcer
       ```
    2. Set env variable
-       ```
+   
+      ```
        export ISHIELD_ENV=local
        export ISHIELD_REPO_ROOT=<Home Dir>/github.com/IBM/integrity-enforcer
        export TEST_LOCAL=true
        export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
-       ```
+      ```
+   
    3. Change version in build configuration
       
       ```
@@ -38,12 +40,12 @@
       
    5. Reset kind cluster 
        
-        ```
+      ```
         make delete-private-registry
         make delete-kind-cluster
         make create-kind-cluster
      
-        ```
+      ```
         
    7. Make sure all pods in kind cluster in ready state. (wait for serveral (5) minutes)
       
@@ -62,9 +64,10 @@
       make test-e2e-bundle
       ```
    10. Update version in required files
-       ```
+      
+      ```
        make update-version
-       ```
+      ```
        
    12. Check git status and git diff for all changed files
 
@@ -73,4 +76,5 @@
        - Add line `replaces: integrity-shield-operator.vx.x.x`   (x matches with previous PREV_VERSION in `ishield-build.conf`)
        - Change from localhost:5000 to quay.io/open-cluster-management in all places.
        - Save the file
+       
    14. Commit changes to files and create PR

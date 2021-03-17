@@ -12,7 +12,7 @@
 
 3. Check the current ISHIELD_VERSION (e.g. ISHIELD_VERSION=0.1.7 ) in your local Integrity Shield directory where you updated version.
 
-4. Go to your local directory of cloned repository of community operators
+4. Go to your `community-operators` local directory of cloned repository of community operators
 
    ```
    cd community-operators/community-operators/integrity-shield-operator
@@ -43,5 +43,13 @@
    
    
    
-8. Repeat the same steps from 4 - 7 for submitting Integrity Shield under `upstream-community-operators` 
+8. Go to your `upstream-community-operators` local directory of cloned repository of community operators
+
+   ```
+   cd community-operators/upstream-community-operators/integrity-shield-operator
+   ls
+   0.1.3  0.1.4  0.1.5  0.1.6  ci.yaml
+   ```
+9. Repeat the same steps from 5 - 7 for submitting Integrity Shield under `upstream-community-operators` 
+
    

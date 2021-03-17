@@ -39,5 +39,9 @@
   
    Add `operators.operatorframework.io.bundle.channel.default.v1: alpha`  as shown below and save the file.
    
+   ![Annotation](./annotation-edit.PNG)
+   
+   
+   
 8. Repeat the same steps from 4 - 7 for submitting Integrity Shield under `upstream-community-operators` 
    

@@ -8,12 +8,11 @@
  
  2. Edit the policy file community/CM-Configuration-Management/policy-integrity-shield.yaml
 
-    - Add the following ConfigurationPolicy to policy-integrity-shield.yaml, under policy-templates:
-    
+    - Add the following ConfigurationPolicy to policy-integrity-shield.yaml, under policy-templates
+   
       change version in image name: (quay.io/open-cluster-management/integrity-shield-operator-index:0.1.5)
     
-       ![policy-catsrc](./policy-catsrc.png)
-    
+      ![policy-catsrc](./policy-catsrc.png)
     
     
     - Change the following ConfigurationPolicy in policy-integrity-shield.yaml, 

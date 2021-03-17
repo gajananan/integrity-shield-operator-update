@@ -24,4 +24,4 @@
       
       ![policy-changes](./policy-changes.png)
       
- 4. Commit the changes to policy and test policy as described in [doc] (https://github.ibm.com/integrity-shield/integrity-shield-testscenarios/blob/fix/install-scenarios/TEST_QUICK_README.md   )
+ 4. Commit the changes to policy and test policy as described in [doc](https://github.ibm.com/integrity-shield/integrity-shield-testscenarios/blob/fix/install-scenarios/TEST_QUICK_README.md   )

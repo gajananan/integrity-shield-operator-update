@@ -12,32 +12,7 @@
     
     - change version in image: (quay.io/open-cluster-management/integrity-shield-operator-index:0.1.5)
     
-      ```YAML
-        - objectDefinition:
-        apiVersion: policy.open-cluster-management.io/v1
-        kind: ConfigurationPolicy
-        metadata:
-          name: policy-integrity-shield-catrsc
-        spec:
-          remediationAction: enforce
-          severity: high
-          object-templates:
-            - complianceType: musthave
-              objectDefinition:
-                apiVersion: operators.coreos.com/v1alpha1
-                kind: CatalogSource
-                metadata:
-                  name: integrity-shield-operator-catalog
-                  namespace: openshift-marketplace
-                spec:
-                  displayName: Integrity Shield Operator
-                  image: quay.io/open-cluster-management/integrity-shield-operator-index:0.1.5
-                  publisher: IBM
-                  sourceType: grpc
-                  updateStrategy:
-                    registryPoll:
-                      interval: 15m
-      ```      
+       ![policy-catsrc](./policy-catsrc.png)
     
     - Change the following ConfigurationPolicy in policy-integrity-shield.yaml, 
     

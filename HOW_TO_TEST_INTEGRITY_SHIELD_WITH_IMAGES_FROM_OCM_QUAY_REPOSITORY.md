@@ -5,7 +5,9 @@
 ## Action Steps:
 
  1. Git clone your forked repository for : https://github.com/open-cluster-management/policy-collection
+ 
  2. Edit the policy file community/CM-Configuration-Management/policy-integrity-shield.yaml
+
  3. Add the following ConfigurationPolicy to policy-integrity-shield.yaml, under policy-templates:
     
     - change version in image: (quay.io/open-cluster-management/integrity-shield-operator-index:0.1.5)

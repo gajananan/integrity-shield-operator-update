@@ -50,31 +50,32 @@
      
       ```
         
-   7. Make sure all pods in kind cluster in ready state. (wait for serveral (5) minutes)
+   6. Make sure all pods in kind cluster in ready state. (wait for serveral (5) minutes)
       
       ```
       kubectl get pod --all-namespaces
       ```
       
-   8. Make sure env variable KUBECONFIG points to Kind cluster
+   7. Make sure env variable KUBECONFIG points to Kind cluster
      
       ```
       export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
       ```
-   9. Run e2e test using OLM bundle and make sure all e2e tests are passed
-   10. Update version in required files
+   8. Run e2e test using OLM bundle and make sure all e2e tests are passed
+   
+   9. Update version in required files
       
       ```
       make test-e2e-bundle
       ```
       
-   11. Check git status and git diff for all changed files
+   10. Check git status and git diff for all changed files
    
-   12. Perform manual edit on `<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/bundle/manifests/integrity-shield-operator.clusterserviceversion.yaml`
+   11. Perform manual edit on `<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/bundle/manifests/integrity-shield-operator.clusterserviceversion.yaml`
 
        - Add line `replaces: integrity-shield-operator.vx.x.x`   (x matches with previous PREV_VERSION in `ishield-build.conf`)
        - Change from localhost:5000 to quay.io/open-cluster-management in all places.
        - Save the file
        
-   14. Commit changes to files and create PR
+   12. Commit changes to files and create PR
    

@@ -32,14 +32,14 @@
       VERSION=0.1.5
       PREV_VERSION=0.1.4
       ```
-      
-      After    
+
+      After
       ```
       ISHIELD_VERSION=0.1.6
       VERSION=0.1.6
       PREV_VERSION=0.1.5
       ```
-     
+      
      
    5. Reset kind cluster 
        

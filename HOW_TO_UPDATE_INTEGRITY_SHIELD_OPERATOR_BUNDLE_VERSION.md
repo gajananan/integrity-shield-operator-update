@@ -11,12 +11,11 @@
    2. Set env variable
    
       ```
-       export ISHIELD_ENV=local
-       export ISHIELD_REPO_ROOT=<Home Dir>/github.com/IBM/integrity-enforcer
-       export TEST_LOCAL=true
-       export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
+      export ISHIELD_ENV=local
+      export ISHIELD_REPO_ROOT=<Home Dir>/github.com/IBM/integrity-enforcer
+      export TEST_LOCAL=true
+       export KUBECONFIG=<Home Dir>/github.com/IBM/integrity-enforcer/integrity-shield-operator/kubeconfig_managed
       ```
-   
    3. Change version in build configuration
       
       ```
